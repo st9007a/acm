@@ -1,7 +1,8 @@
 OUT = bin
 
 EXEC := uva-10327 \
-	   uva-10810
+	    uva-10810 \
+		uva-10107
 EXEC := $(addprefix $(OUT)/,$(EXEC))
 
 target ?= uva-10327
