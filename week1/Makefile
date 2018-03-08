@@ -1,10 +1,11 @@
 OUT = bin
 
-EXEC := uva-10327 \
-	    uva-10810 \
-		uva-10107 \
-		uva-10026 \
-		uva-10420
+EXEC := UVA-10327 \
+	    UVA-10810 \
+		UVA-10107 \
+		UVA-10026 \
+		UVA-10420 \
+		POJ-3067
 
 EXEC := $(addprefix $(OUT)/,$(EXEC))
 
