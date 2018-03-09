@@ -5,7 +5,9 @@ EXEC := UVA-10327 \
 		UVA-10107 \
 		UVA-10026 \
 		UVA-10420 \
-		POJ-3067
+		UVA-879 \
+		UVA-10583 \
+		UVA-10685
 
 EXEC := $(addprefix $(OUT)/,$(EXEC))
 
@@ -21,8 +23,11 @@ $(OUT):
 $(OUT)/%: %.c
 	gcc -o $@ $^
 
+$(OUT)/%: %.cpp
+	g++ -o $@ $^
+
 test: $(EXEC)
-	@cat in.txt | ./$(OUT)/$(target) > out.txt
+	cat in.txt | ./$(OUT)/$(target) > out.txt
 
 clean:
 	rm -rf $(EXEC)
