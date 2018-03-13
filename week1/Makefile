@@ -10,7 +10,8 @@ EXEC := UVA-10327 \
 		UVA-10685 \
 		UVA-10158 \
 		UVA-11987 \
-		UVA-260
+		UVA-260 \
+		UVA-336
 
 EXEC := $(addprefix $(OUT)/,$(EXEC))
 
@@ -27,7 +28,7 @@ $(OUT)/%: %.c
 	gcc -o $@ $^
 
 $(OUT)/%: %.cpp
-	g++ -o $@ $^
+	g++ -o $@ $^ -std=c++11
 
 test: $(EXEC)
 	cat in.txt | ./$(OUT)/$(target) > out.txt
