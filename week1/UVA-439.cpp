@@ -43,23 +43,21 @@ int BFS(Position from, Position to)
         curr = q.front();
         q.pop();
 
-        if (curr.x == to.x && curr.y == to.y) {
-            return visited[curr.x][curr.y];
-        }
-
         for (int i = 0; i < 8; i++) {
             next.x = curr.x + dir[i][0];
             next.y = curr.y + dir[i][1];
-            if (next.x < 0 || next.x >= 8 || next.y < 0 || next.y >= 8) {
-                continue;
-            }
-            if (visited[next.x][next.y] == 0) {
+
+            if (visited[next.x][next.y] == 0 && next.x >=0 && next.x < 8 && next.y >= 0 && next.y < 8) {
                 visited[next.x][next.y] = visited[curr.x][curr.y] + 1;
+
+                if (next.x == to.x && next.y == to.y) {
+                    return visited[next.x][next.y];
+                }
 
                 q.push(next);
             }
         }
 
     }
-    return visited[curr.x][curr.y];
+    return -1;
 }
