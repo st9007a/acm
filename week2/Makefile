@@ -1,4 +1,5 @@
 OUT = bin
+CFLAGS = -lm -lcrypt -O2 -std=c++11 -pipe -DONLINE_JUDGE
 
 EXEC := UVA-10392 \
 		UVA-10106 \
@@ -19,10 +20,10 @@ $(OUT):
 	mkdir -p $@
 
 $(OUT)/%: %.c
-	gcc -o $@ $^
+	gcc -o $@ $^ $(CFLAGS)
 
 $(OUT)/%: %.cpp
-	g++ -o $@ $^ -std=c++11
+	g++ -o $@ $^ $(CFLAGS)
 
 test: $(EXEC)
 	cat in.txt | ./$(OUT)/$(target) > out.txt
