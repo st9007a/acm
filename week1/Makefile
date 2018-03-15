@@ -38,4 +38,4 @@ test: $(EXEC)
 	cat in.txt | ./$(OUT)/$(target) > out.txt
 
 clean:
-	rm -rf $(EXEC)
+	rm -rf $(OUT)
