@@ -8,7 +8,9 @@ EXEC := UVA-441 \
 		UVA-200 \
 		UVA-291 \
 		UVA-524 \
-		UVA-574
+		UVA-574 \
+		UVA-624 \
+		UVA-989
 
 EXEC := $(addprefix $(OUT)/,$(EXEC))
 
