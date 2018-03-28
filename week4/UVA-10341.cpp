@@ -20,7 +20,7 @@ int main()
             }
         }
 
-        if (fabs(formula(mid) - 0) > 1e-9) {
+        if (fabs(formula(mid)) > 1e-9) {
             printf("No solution\n");
         } else {
             printf("%.4lf\n", mid);
