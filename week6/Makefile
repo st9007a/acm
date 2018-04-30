@@ -1,7 +1,9 @@
 OUT = bin
 CFLAGS = -lm -lcrypt -O2 -std=c++11 -pipe -DONLINE_JUDGE
 
-EXEC := UVA-315
+EXEC := UVA-315 \
+		UVA-11838 \
+		UVA-247
 
 EXEC := $(addprefix $(OUT)/,$(EXEC))
 
