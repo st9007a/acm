@@ -4,7 +4,8 @@ CFLAGS = -lm -lcrypt -O2 -std=c++11 -pipe -DONLINE_JUDGE
 EXEC := UVA-10080 \
 		UVA-259 \
 		UVA-663 \
-		POJ-1486
+		POJ-1486 \
+		UVA-670
 
 EXEC := $(addprefix $(OUT)/,$(EXEC))
 
