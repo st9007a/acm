@@ -5,7 +5,8 @@ EXEC := POJ-3264 \
 		POJ-2352 \
 		POJ-1195 \
 		POJ-3321 \
-		POJ-2155
+		POJ-2155 \
+		POJ-2481
 
 EXEC := $(addprefix $(OUT)/,$(EXEC))
 
