@@ -1,13 +1,17 @@
 TARGET = all clean
 
-SUBDIRS = week1 \
-		  week2 \
-		  week3 \
-		  week4 \
-		  week5 \
-		  week6 \
-		  week7 \
-		  week8
+SUBDIRS = hw1 \
+		  hw2 \
+		  hw3 \
+		  hw4 \
+		  hw5 \
+		  hw6 \
+		  hw7 \
+		  hw8 \
+		  hw9 \
+		  hw10 \
+		  hw11 \
+		  hw12
 
 .PHONY: $(TARGET) $(SUBDIRS)
 
